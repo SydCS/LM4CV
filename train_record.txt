@@ -1,0 +1,139 @@
+CIFAR-10:
+
+(LM4CV) (base) yg@w1:~/LM4CV$ CUDA_VISIBLE_DEVICES=3 python main.py --config configs/cifar10.yaml 
+{'dataset': 'cifar10', 'attributes': 'cifar10', 'cluster_feature_method': 'linear', 'model_type': 'clip', 'model_size': 'ViT-B/32', 'mahalanobis': False, 'division_power': 2, 'linear_epochs': 200, 'reinit': True, 'num_attributes': 10, 'seed': 1, 'lr': 0.01, 'batch_size': 4096, 'epochs': 1000, 'linear_model': ['linear', 'linear'], 'score_model': ['linear']}
+num_attributes:  10
+Files already downloaded and verified
+Files already downloaded and verified
+Epoch [0], Best accuracy: 83.16000366210938 Last accuracy: 83.16000366210938 Last Best accuracy: 0
+Epoch [10], Best accuracy: 93.54000091552734 Last accuracy: 93.5199966430664 Last Best accuracy: 83.16000366210938
+Epoch [20], Best accuracy: 94.36000061035156 Last accuracy: 94.36000061035156 Last Best accuracy: 93.54000091552734
+Epoch [30], Best accuracy: 94.70999908447266 Last accuracy: 94.70999908447266 Last Best accuracy: 94.36000061035156
+Epoch [40], Best accuracy: 94.80999755859375 Last accuracy: 94.80999755859375 Last Best accuracy: 94.70999908447266
+Epoch [50], Best accuracy: 94.88999938964844 Last accuracy: 94.83000183105469 Last Best accuracy: 94.80999755859375
+Epoch [60], Best accuracy: 94.88999938964844 Last accuracy: 94.8800048828125 Last Best accuracy: 94.88999938964844
+/home/yg/LM4CV/cluster.py:188: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  torch.tensor(attribute_embeddings[selected_idxes]),
+Files already downloaded and verified
+Files already downloaded and verified
+Epoch [0], Best accuracy: 10.0 Last accuracy: 10.0 Last Best accuracy: 0
+Epoch [10], Best accuracy: 41.61000061035156 Last accuracy: 41.61000061035156 Last Best accuracy: 10.0
+Epoch [20], Best accuracy: 48.5 Last accuracy: 48.5 Last Best accuracy: 41.61000061035156
+Epoch [30], Best accuracy: 55.37999725341797 Last accuracy: 55.37999725341797 Last Best accuracy: 48.5
+Epoch [40], Best accuracy: 60.689998626708984 Last accuracy: 60.689998626708984 Last Best accuracy: 55.37999725341797
+Epoch [50], Best accuracy: 64.62000274658203 Last accuracy: 64.62000274658203 Last Best accuracy: 60.689998626708984
+Epoch [60], Best accuracy: 68.37000274658203 Last accuracy: 68.37000274658203 Last Best accuracy: 64.62000274658203
+Epoch [70], Best accuracy: 71.1500015258789 Last accuracy: 71.1500015258789 Last Best accuracy: 68.37000274658203
+Epoch [80], Best accuracy: 72.57999420166016 Last accuracy: 72.57999420166016 Last Best accuracy: 71.1500015258789
+Epoch [90], Best accuracy: 73.68999481201172 Last accuracy: 73.6199951171875 Last Best accuracy: 72.57999420166016
+Epoch [100], Best accuracy: 74.33999633789062 Last accuracy: 74.33999633789062 Last Best accuracy: 73.68999481201172
+Epoch [110], Best accuracy: 75.12999725341797 Last accuracy: 74.76000213623047 Last Best accuracy: 74.33999633789062
+Epoch [120], Best accuracy: 75.61000061035156 Last accuracy: 75.61000061035156 Last Best accuracy: 75.12999725341797
+Epoch [130], Best accuracy: 76.20000457763672 Last accuracy: 76.20000457763672 Last Best accuracy: 75.61000061035156
+Epoch [140], Best accuracy: 76.66000366210938 Last accuracy: 76.4800033569336 Last Best accuracy: 76.20000457763672
+Epoch [150], Best accuracy: 77.27000427246094 Last accuracy: 77.20000457763672 Last Best accuracy: 76.66000366210938
+Epoch [160], Best accuracy: 78.02999877929688 Last accuracy: 77.43000030517578 Last Best accuracy: 77.27000427246094
+Epoch [170], Best accuracy: 78.16000366210938 Last accuracy: 77.81999969482422 Last Best accuracy: 78.02999877929688
+Epoch [180], Best accuracy: 78.47999572753906 Last accuracy: 78.30999755859375 Last Best accuracy: 78.16000366210938
+Epoch [190], Best accuracy: 78.62999725341797 Last accuracy: 78.23999786376953 Last Best accuracy: 78.47999572753906
+Epoch [200], Best accuracy: 79.00999450683594 Last accuracy: 78.79999542236328 Last Best accuracy: 78.62999725341797
+Epoch [210], Best accuracy: 79.22000122070312 Last accuracy: 79.02999877929688 Last Best accuracy: 79.00999450683594
+Epoch [220], Best accuracy: 79.32999420166016 Last accuracy: 79.32999420166016 Last Best accuracy: 79.22000122070312
+Epoch [230], Best accuracy: 79.68999481201172 Last accuracy: 79.56999969482422 Last Best accuracy: 79.32999420166016
+Epoch [240], Best accuracy: 79.8499984741211 Last accuracy: 79.63999938964844 Last Best accuracy: 79.68999481201172
+Epoch [250], Best accuracy: 79.8499984741211 Last accuracy: 79.81999969482422 Last Best accuracy: 79.8499984741211
+
++ ensemble: 0.5:0.5
+Epoch [0], Best accuracy: 14.219999313354492 Last accuracy: 14.219999313354492 Last Best accuracy: 0
+Epoch [10], Best accuracy: 94.05000305175781 Last accuracy: 94.05000305175781 Last Best accuracy: 14.219999313354492
+Epoch [20], Best accuracy: 94.05000305175781 Last accuracy: 94.05000305175781 Last Best accuracy: 94.05000305175781
+
++ ensemble: 0.2:0.8
+Epoch [0], Best accuracy: 10.0 Last accuracy: 10.0 Last Best accuracy: 0
+Epoch [10], Best accuracy: 87.44000244140625 Last accuracy: 87.13999938964844 Last Best accuracy: 10.0
+Epoch [20], Best accuracy: 88.19000244140625 Last accuracy: 88.19000244140625 Last Best accuracy: 87.44000244140625
+Epoch [30], Best accuracy: 89.22000122070312 Last accuracy: 89.22000122070312 Last Best accuracy: 88.19000244140625
+Epoch [40], Best accuracy: 89.68000030517578 Last accuracy: 89.68000030517578 Last Best accuracy: 89.22000122070312
+Epoch [50], Best accuracy: 90.02000427246094 Last accuracy: 90.02000427246094 Last Best accuracy: 89.68000030517578
+Epoch [60], Best accuracy: 90.30000305175781 Last accuracy: 90.30000305175781 Last Best accuracy: 90.02000427246094
+Epoch [70], Best accuracy: 90.4000015258789 Last accuracy: 90.4000015258789 Last Best accuracy: 90.30000305175781
+Epoch [80], Best accuracy: 90.58999633789062 Last accuracy: 90.58999633789062 Last Best accuracy: 90.4000015258789
+Epoch [90], Best accuracy: 90.72000122070312 Last accuracy: 90.69000244140625 Last Best accuracy: 90.58999633789062
+Epoch [100], Best accuracy: 90.80000305175781 Last accuracy: 90.79000091552734 Last Best accuracy: 90.72000122070312
+Epoch [110], Best accuracy: 90.8499984741211 Last accuracy: 90.83999633789062 Last Best accuracy: 90.80000305175781
+Epoch [120], Best accuracy: 90.98999786376953 Last accuracy: 90.81999969482422 Last Best accuracy: 90.8499984741211
+Epoch [130], Best accuracy: 90.98999786376953 Last accuracy: 90.9000015258789 Last Best accuracy: 90.98999786376953
+
++ ensemble: 0.1:0.9
+Epoch [0], Best accuracy: 10.0 Last accuracy: 10.0 Last Best accuracy: 0
+Epoch [10], Best accuracy: 73.30999755859375 Last accuracy: 73.12999725341797 Last Best accuracy: 10.0
+Epoch [20], Best accuracy: 76.81999969482422 Last accuracy: 76.81999969482422 Last Best accuracy: 73.30999755859375
+Epoch [30], Best accuracy: 79.47999572753906 Last accuracy: 79.47999572753906 Last Best accuracy: 76.81999969482422
+Epoch [40], Best accuracy: 81.12000274658203 Last accuracy: 81.11000061035156 Last Best accuracy: 79.47999572753906
+Epoch [50], Best accuracy: 82.59000396728516 Last accuracy: 82.59000396728516 Last Best accuracy: 81.12000274658203
+Epoch [60], Best accuracy: 83.58000183105469 Last accuracy: 83.58000183105469 Last Best accuracy: 82.59000396728516
+Epoch [70], Best accuracy: 84.05000305175781 Last accuracy: 84.05000305175781 Last Best accuracy: 83.58000183105469
+Epoch [80], Best accuracy: 84.41999816894531 Last accuracy: 84.37000274658203 Last Best accuracy: 84.05000305175781
+Epoch [90], Best accuracy: 84.73999786376953 Last accuracy: 84.73999786376953 Last Best accuracy: 84.41999816894531
+Epoch [100], Best accuracy: 85.23999786376953 Last accuracy: 85.23999786376953 Last Best accuracy: 84.73999786376953
+Epoch [110], Best accuracy: 85.43999481201172 Last accuracy: 85.15999603271484 Last Best accuracy: 85.23999786376953
+Epoch [120], Best accuracy: 85.7699966430664 Last accuracy: 85.7699966430664 Last Best accuracy: 85.43999481201172
+Epoch [130], Best accuracy: 85.98999786376953 Last accuracy: 85.8499984741211 Last Best accuracy: 85.7699966430664
+Epoch [140], Best accuracy: 86.15999603271484 Last accuracy: 86.15999603271484 Last Best accuracy: 85.98999786376953
+Epoch [150], Best accuracy: 86.3699951171875 Last accuracy: 86.08000183105469 Last Best accuracy: 86.15999603271484
+Epoch [160], Best accuracy: 86.47999572753906 Last accuracy: 86.4000015258789 Last Best accuracy: 86.3699951171875
+Epoch [170], Best accuracy: 86.68000030517578 Last accuracy: 86.54000091552734 Last Best accuracy: 86.47999572753906
+Epoch [180], Best accuracy: 86.70999908447266 Last accuracy: 86.70999908447266 Last Best accuracy: 86.68000030517578
+Epoch [190], Best accuracy: 86.80999755859375 Last accuracy: 86.66999816894531 Last Best accuracy: 86.70999908447266
+Epoch [200], Best accuracy: 86.91999816894531 Last accuracy: 86.83999633789062 Last Best accuracy: 86.80999755859375
+Epoch [210], Best accuracy: 87.0 Last accuracy: 86.81999969482422 Last Best accuracy: 86.91999816894531
+Epoch [220], Best accuracy: 87.05999755859375 Last accuracy: 87.05999755859375 Last Best accuracy: 87.0
+Epoch [230], Best accuracy: 87.05999755859375 Last accuracy: 87.0 Last Best accuracy: 87.05999755859375
+
+---
+
+FOOD:
+
+reinit = false:
+(LM4CV) (base) yg@w1:~/LM4CV$ CUDA_VISIBLE_DEVICES=2 python main.py --config configs/food_bn.yaml
+{'dataset': 'food', 'attributes': 'food', 'cluster_feature_method': 'linear', 'model_type': 'clip', 'model_size': 'ViT-B/32', 'mahalanobis': False, 'division_power': 2, 'linear_epochs': 200, 'reinit': False, 'num_attributes': 64, 'seed': 0, 'lr': 0.01, 'batch_size': 4096, 'epochs': 2000, 'linear_model': ['linear', 'bn', 'linear'], 'score_model': ['bn', 'linear']}
+num_attributes:  64
+Epoch [0], Best accuracy: 79.66732025146484 Last accuracy: 79.66732025146484 Last Best accuracy: 0
+Epoch [10], Best accuracy: 83.11682891845703 Last accuracy: 82.69702911376953 Last Best accuracy: 79.66732025146484
+Epoch [20], Best accuracy: 83.11682891845703 Last accuracy: 81.81782531738281 Last Best accuracy: 83.11682891845703
+/home/yg/LM4CV/cluster.py:188: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  torch.tensor(attribute_embeddings[selected_idxes]),
+Get Embeddings...
+Initializing Feature Dataset
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19/19 [00:00<00:00, 19.80it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:00<00:00, 20.65it/s]
+Epoch [0], Best accuracy: 59.47722625732422 Last accuracy: 59.47722625732422 Last Best accuracy: 0
+Epoch [10], Best accuracy: 77.35049438476562 Last accuracy: 77.35049438476562 Last Best accuracy: 59.47722625732422
+Epoch [20], Best accuracy: 77.94851684570312 Last accuracy: 77.94851684570312 Last Best accuracy: 77.35049438476562
+Epoch [30], Best accuracy: 77.94851684570312 Last accuracy: 77.54059600830078 Last Best accuracy: 77.94851684570312
+
+
+reinit = true:
+(LM4CV) (base) yg@w1:~/LM4CV$ CUDA_VISIBLE_DEVICES=2 python main.py --config configs/food_bn.yaml
+{'dataset': 'food', 'attributes': 'food', 'cluster_feature_method': 'linear', 'model_type': 'clip', 'model_size': 'ViT-B/32', 'mahalanobis': False, 'division_power': 2, 'linear_epochs': 200, 'reinit': True, 'num_attributes': 64, 'seed': 0, 'lr': 0.01, 'batch_size': 4096, 'epochs': 2000, 'linear_model': ['linear', 'bn', 'linear'], 'score_model': ['bn', 'linear']}
+num_attributes:  64
+Epoch [0], Best accuracy: 79.66732025146484 Last accuracy: 79.66732025146484 Last Best accuracy: 0
+Epoch [10], Best accuracy: 83.11682891845703 Last accuracy: 82.69702911376953 Last Best accuracy: 79.66732025146484
+Epoch [20], Best accuracy: 83.11682891845703 Last accuracy: 81.81782531738281 Last Best accuracy: 83.11682891845703
+/home/yg/LM4CV/cluster.py:188: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  torch.tensor(attribute_embeddings[selected_idxes]),
+Epoch [0], Best accuracy: 57.75445556640625 Last accuracy: 57.75445556640625 Last Best accuracy: 0
+Epoch [10], Best accuracy: 76.80000305175781 Last accuracy: 76.80000305175781 Last Best accuracy: 57.75445556640625
+Epoch [20], Best accuracy: 77.43366241455078 Last accuracy: 77.23564147949219 Last Best accuracy: 76.80000305175781
+Epoch [30], Best accuracy: 77.58019256591797 Last accuracy: 77.44950866699219 Last Best accuracy: 77.43366241455078
+Epoch [40], Best accuracy: 77.75841522216797 Last accuracy: 77.75841522216797 Last Best accuracy: 77.58019256591797
+Epoch [50], Best accuracy: 77.75841522216797 Last accuracy: 77.2514877319336 Last Best accuracy: 77.75841522216797
+
++ ensemble: 0.5 0.5
+Epoch [0], Best accuracy: 81.87722778320312 Last accuracy: 81.87722778320312 Last Best accuracy: 0
+Epoch [10], Best accuracy: 82.49900817871094 Last accuracy: 82.20198059082031 Last Best accuracy: 81.87722778320312
+Epoch [20], Best accuracy: 82.49900817871094 Last accuracy: 82.11881256103516 Last Best accuracy: 82.49900817871094
+
+
+CIFAR-100:
+

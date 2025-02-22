@@ -17,5 +17,5 @@ batch_size: 4096
 epochs: 2000
 
 # model structure
-linear_model: [linear, bn, linear] 
+linear_model: [linear, bn, linear]
 score_model: [bn, linear]
